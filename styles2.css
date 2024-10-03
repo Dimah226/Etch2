@@ -1,0 +1,274 @@
+body {
+    background-color: hsl(49, 19%, 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Évite les marges par défaut */
+  }
+  
+  .content {
+    width: 100%; /* Permet à la largeur de s'ajuster sur tous les écrans */
+    max-width: 1100px; /* Largeur maximale */
+    height: 960px;
+    border: 1rem solid rgb(245, 245, 220);
+    border-radius: 16px;
+  }
+  
+  .container {
+    display: grid; /* Utilisation de CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Crée une grille réactive */
+    width: 100%; /* Prendre toute la largeur */
+    height: 100%; /* Prendre toute la hauteur */
+    background-color: white;
+    gap: 1px; /* Espace entre les éléments */
+  }
+  
+  .element {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0); /* Couleur par défaut */
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  
+  .element:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Ajustement de la taille au survol */
+  }
+  
+  .content1 {
+    background-color: gray; /* Fond gris */
+    border-radius: 16px; /* Coins arrondis */
+    min-height: 900px; /* Hauteur minimum */
+    display: flex; /* Flexbox pour le contenu intérieur */
+    flex-direction: column; /* Empilement vertical */
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre verticalement */
+    border: 10px solid rgba(252, 248, 248, 0.05); /* Bordure visible */
+    color: white; /* Couleur du texte */
+  }
+  
+  .header {
+    display: flex; /* Flexbox pour l'en-tête */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Largeur maximale */
+    padding: 16px; /* Padding interne */
+  }
+  
+  .input {
+    margin-left: 50px; /* Espace à gauche */
+  }
+  
+  .profile-container {
+    width: 50px; /* Largeur du conteneur */
+    height: 50px; /* Hauteur du conteneur */
+    overflow: hidden; /* Masquer le débordement */
+    border-radius: 50%; /* Forme circulaire */
+    display: flex; /* Flexbox pour l'image */
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+  }
+  
+  .profile-image {
+    width: 100%; /* Image prend toute la largeur */
+    height: auto; /* Conserve le ratio d'aspect */
+  }
+  
+  .money {
+    align-self: flex-end; /* Aligne à l'extrémité */
+    margin-left: auto; /* Pousse à droite */
+    margin-right: 50px; /* Espace à gauche */
+    min-width: 100px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 2px solid; /* Épaisseur de la bordure */
+    border-image: linear-gradient(45deg, #00bfff, #8a2be2) 1;
+  }
+  
+  .block {
+    display: flex;
+    min-width: 100%; /* Largeur minimale pour le bloc */
+    min-height: 800px;
+    align-items: center;
+    margin-top: auto; /* Espace au-dessus */
+    justify-content: space-between;
+  }
+  
+  .lien {
+    width: 50px; /* Largeur des liens */
+  }
+  
+  .link {
+    display: flex;
+    flex-direction: column; /* Disposition verticale des liens */
+    margin-left: 5px; /* Espace à gauche */
+  }
+  
+  .i-logo {
+    width: 50px; /* Largeur du logo */
+    height: auto; /* Conserve le ratio d'aspect */
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+  }
+  
+  .input1 {
+    border-radius: 12px; /* Coins arrondis */
+    border: transparent; /* Pas de bordure */
+    background-color: white; /* Couleur de fond */
+    color: gray; /* Couleur du texte */
+    width: 300px; /* Largeur du champ */
+    height: 20px; /* Hauteur du champ */
+    padding: 10px; /* Padding interne */
+  }
+  
+  .input1::placeholder {
+    color: gray; /* Couleur du placeholder */
+  }
+  
+  .money-title {
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 15px; /* Ajuste la taille selon tes besoins */
+    font-weight: bold;
+    color: #fff; /* Ajuste la couleur */
+  }
+  
+  .money-val {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: normal;
+  }
+  
+  .para {
+    display: flex;
+    width: 100%; /* Largeur maximale */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Custom Slider Styles */
+  #slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px; /* Largeur par défaut */
+    height: 10px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+  }
+  
+  #slider:hover {
+    opacity: 1;
+  }
+  
+  #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  #slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  /* Custom Toggle Button Styles */
+  #toggleButton,
+  #reset {
+    background-color: beige;
+    border: none;
+    color: gray;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  #reset {
+    width: 150px; /* Largeur du bouton reset */
+  }
+
+
+  body {
+    background-color: hsl(49, 19%, 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+.content1 {
+    max-width: 1200px; /* Largeur maximale */
+    width: 100%; /* Prend toute la largeur de l'écran */
+    border: 1rem solid rgb(245, 245, 220);
+    border-radius: 16px;
+    overflow: hidden; /* Évite le débordement du contenu */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column; /* Disposition verticale */
+    align-items: center; /* Centre le contenu */
+}
+
+.container {
+    display: grid; /* Utilisation de Grid pour une meilleure mise en page */
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adaptation dynamique */
+    gap: 2px; /* Espace entre les éléments de la grille */
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajuster les styles pour les éléments de la grille */
+.element {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Media Queries pour une meilleure adaptation sur mobiles */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; /* Empiler les éléments sur les petits écrans */
+    }
+    
+    .para {
+        flex-direction: column; /* Empiler les contrôles sur les petits écrans */
+    }
+}
+
+  

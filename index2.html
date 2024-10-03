@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajout de la balise viewport pour la responsivité -->
+    <link rel="stylesheet" href="./styles2.css">
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700&family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="./java2.js" defer></script>
+    <title>ETCH A SKETCH</title>
+</head>
+<body>
+    
+    <div class="content1">
+        <div class="header">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Logo" class="i-logo"> RAHAH FULLSTACK
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Recherche..." class="input1">
+            </div>
+            <div class="money">
+                <div class="money-val">$ 233.84</div>
+                <div class="money-title">R GAME</div>
+            </div>
+            <div class="profile-container">
+                <img src="https://img.freepik.com/vecteurs-premium/mascotte-gamer-boy_138200-75.jpg?w=740" alt="Photo de profil" class="profile-image">
+            </div>
+        </div>
+        
+        <div class="block">
+            <div class="link">
+                <a href="https://www.theodinproject.com/dashboard" target="_blank" rel="noopener noreferrer"><img src="./image/instagram.png" alt="Instagram" class="lien"></a>
+                <a href="https://www.theodinproject.com/dashboard" target="_blank" rel="noopener noreferrer"><img src="./image/x.png" alt="Twitter" class="lien"></a>
+                <a href="https://www.theodinproject.com/dashboard" target="_blank" rel="noopener noreferrer"><img src="./image/discord.png" alt="Discord" class="lien"></a>
+                <a href="https://www.theodinproject.com/dashboard" target="_blank" rel="noopener noreferrer"><img src="./image/Facebook.png" alt="Facebook" class="lien"></a>
+                <a href="https://www.theodinproject.com/dashboard" target="_blank" rel="noopener noreferrer"><img src="./image/discord.png" alt="Site" class="lien"></a>
+            </div>
+            <div>
+                <div class="para">
+                    <div class="cell">
+                        <div class="text1">16x16</div>
+                        <input type="range" id="slider" min="4" max="100" value="16">
+                    </div>
+                    <button id="reset">Reset</button>
+                    <button id="toggleButton">Switch to Random Color</button>
+                </div>
+                <div class="content">
+                    <div class="container"></div> <!-- La grille sera générée ici -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
